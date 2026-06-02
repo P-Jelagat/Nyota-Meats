@@ -87,8 +87,35 @@ Each card can have:
 * Image
 * Description
 * Available cuts
+Premium Beef
+──────────────────
+Fresh, quality-controlled beef cuts.
+
+Retail Orders
+1–50 kg
+
+Wholesale Orders
+50 kg+
+
+Bulk Pricing Available
+
+[Request Quote]
 
 ---
+Products
+├── Product Cards
+│
+├── Available For
+│   • Retail
+│   • Wholesale
+│   • Hospitality
+│
+├── Order Volumes
+│   • Small Orders
+│   • Bulk Orders
+│
+└── Get Quote Button
+
 
 ## Why Choose Us
 

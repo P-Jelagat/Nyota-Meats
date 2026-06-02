@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #160c04;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+body{
+
+    background: #4b290d;
+}
+
+.container{
+    margin: 15px;
+    background: #FAFAFA;
+    padding: 10px;
+}
+
+/* STYLING HEAD CONTENTS */
+#head{
+    position: relative;
+    padding: 5px;
+    border: 1px solid rgba(22, 12, 4, 0.4) ;
+}
+
+#head h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between; 
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#menu-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 2em ;
+    padding-left: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* NAV MOBILE RESPONSIVENESS */
+@media(max-width:950px){
+    .hide{
+        display: none;
+    }
+    nav{
+        justify-content: flex-end;
+        gap: 2em;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+}
+
+
+/* STYLING HERO CONTENTS */
+#hero{
+    height: 60vh;
+    position: relative;
+}
+
+.hero-image{
+    height: 100%;
+    background: url(/images/backgrounds/daniel-quiceno-m-4MQtWCxUrYc-unsplash.jpg);
+    background-size: cover;
+    background-position: right;
+    transform: scaleX(-1);
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.text h2,
+.text p {
+    color: #FAFAFA;
+    font-style: italic;
+} 
+
+.cta-links{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.cta-links a{
+    background: rgba(250, 250, 250, 0.7);
+    border-radius: 150px;
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: #160c04;
+    transition: 0.2s ease;
+}
+
+.cta-links a:hover{
+    background: #ffffff;
+}
+
+@media(max-width: 950px){
+    .overlay{
+        top: 2em;
+    }
+
+    .cta-links{
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 5px ;
+        gap: 10px;
+    }
+
+    .cta-links a{
+       width: fit-content;
+    }
+}
+
+/* ABOUT US SECTION */
+#about-us {
+    margin-top: 50px ;
+    min-height: 40vh;
+    padding: 40px;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+}
+
+#about-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* PRODUCTS SECTION */
+#products{
+
+    margin-top: 5em;
+    background: #FFFAF5;
+    padding: 30px;
+    border: 1px solid rgba(22, 12, 4, 0.2) ;
+
+}
+#products h3{
+    margin-bottom: 1em;
+}
+
+.products-grid{
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit,minmax(50px,1fr));
+    gap: 2rem;
+}
+    
+
+.product-image{
+    display: none;
+}
+/* 
+
+.products-grid h3{
+    text-align: center;
+}
+
+.product-card{
+    display: grid;
+    grid-template-rows: 220px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-image{
+    width: 100%;
+    height: 100%;
+}
+
+.product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info{
+    padding: 1rem;
+    
+}
+
+.product-info h4{
+    margin-bottom: .75rem;
+}
+
+.product-info p{
+    line-height: 1.6;
+} */
+
+
+
+
+
+
+

@@ -4,108 +4,395 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyota Meats</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/images/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/logo.png">
 </head>
 <body>
 
-    <div class="navigation">
-        <span>Nyota Meats</span>
 
-        <section>
+    <div class="container">
+
+
+    <!--LOGO AND NAVIGATION -->
+
+        <section id="head">
+
+            <h1>Nyota Meats</h1>
+
             <nav>
+                <button id="menu-btn">&#9776;</button>
                 <a href="">Home</a>
-                <a href="">Services & Products</a>
-                <a href="">Facility & Testimonials</a>
+                <a href="" class="hide">About Us</a>
+                <a href="" class="hide">Products</a>
+                <a href="" class="hide">Coverage & Service Areas</a>
+                <a href="" class="hide">Why Us?</a>
                 <a href="">FAQs</a>
                 <a href="">Contact Us</a>
             </nav>
+
         </section>
 
-    </div>
-
-    <section id="banner">
-        <!--The banner should fade into a dark colour and on the side most saturated with the colour
-        there should be a short, motto like description of the business on there-->
-          <img src="/images/backgrounds/Final banner, nyota meats.png" alt="">
-
-    </section>
-
-    <main class="content">
-
-        <div class="homePage">
-
-            <section id="filler">
-            <!--put a service inquiry button in here and some fancy discover text-->
-
-            </section>
-
-            <section id="aboutUs">
-                <!--The screen should be split into two halves, one side showcasing images(with short descriptions of success) 
-                that change every 3 seconds or so, the other should have the about us text -->
-
-                <div class="slideHome">
-
-                    <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="" class="active">
-                    <img src="/images/backgrounds/Banner image- nyota meats.png" alt="">
-                    <img src="/images/livestock/stijn-te-strake-UdhpcfImQ9Y-unsplash.jpg" alt="">
-                    <img src="/images/backgrounds/mw960367054-uHrFAfFhv0w-unsplash.jpg" alt="">
-
-                </div>
-
-                <div class="info">
-                    
-             <h2>Built on Experience & Precision</h2>
-             <p>For over 15 years, Nyota Prime Meats has supplied East Africa’s hospitality and retail industries with premium-quality meat products built on reliability, hygiene, and trust.</p>
-
-             <h2>Years of Trusted Operation</h2>
-             <p>Our experience serving hotels, restaurants, supermarkets, and wholesale suppliers has helped us build efficient systems focused on consistency and dependable large-scale delivery.</p>
-
-             <h2>Certified Standards & Compliance</h2>
-             <p>We operate under strict food safety and processing standards with regular inspections and certified handling procedures.</p>
-
-             <p>Veterinary Compliance • Hygiene Certification • Halal Processing • Cold Chain Approval</p>
-
-             <h2>Hygiene & Processing Standards</h2>
-             <p>Our facilities follow strict sanitation protocols with sterilized equipment, trained personnel, and temperature-controlled environments to maintain freshness and safety.</p>
-
-             <h2>Ethical Livestock Sourcing</h2>
-             <p>We partner with trusted livestock suppliers across East Africa to ensure responsible sourcing, traceability, and consistent product quality.</p>
-
-             <h2>Cold Chain Logistics & Distribution</h2>
-             <p>Our refrigerated storage and transport systems preserve product quality while ensuring reliable distribution across the region.</p>
-
-
-
-                </div>
+    <!-- HERO SECTION -->
          
+        <section id="hero">
 
-            </section>
+            <div class="hero-image">
 
-        </div>
+            </div>
+
+            <div class="overlay">
+
+                <div class="text">
+                    <h2>Fresh, Quality Meat Delivered Reliably</h2>
+                    <p>Supplying restaurants, hotels, retailers, and wholesalers with premium meat products.</p>
+                </div>
+
+                <div class="cta-links">
+                   <a href="">request a quote</a>
+                   <a href="">contact sales</a>
+                </div>
+
+           </div>
+
+        </section>
+        
+
+        <!-- MAIN PAGE CONTENTS -->
+         <main>
+
+            <!-- ABOUT US SECTION -->
+             
+              <section id="about-us"> 
+
+                    <div id="about-info">
+                        <h3>About Us:</h3> <hr>
+                        <p>With a commitment to quality, safety, and reliability, we provide premium meat products to businesses across the region.</p>
+                        <p>Our distribution network is designed to ensure consistent supply, timely deliveries, and products handled according to industry best practices.</p>
+                        <p>From small orders to large-scale wholesale supply, we work closely with our clients to deliver solutions that meet their unique needs.</p>
+                    </div>
+                
+             </section>
+              <hr>
+
+             
+
+             <!--PRODUCTS SECTION  -->
+             <section id="products"> 
+
+                <h3>Products:</h3> <hr>
+
+                <div id="raw-products" class="products-grid">
+
+                    <h3>Raw Meat Products</h3>
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
 
 
 
-    </main>
+                <div id="processed-products" class="products-grid">
+
+                    <h3>Processed Products</h3>
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <artile class="product-card">
+                        
+                        <div class="product-image">
+                             <img src="/images/livestock/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Premium Beef</h4>
+
+                            <p>Fresh, quality-controlled beef available for retail and wholesale</p>
+                            <ul>
+                                <li>Retail & Wholesale</li>
+                                <li>Bulk Orders Available</li>
+                                <li>Reliable Delivery</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+             </section>
 
 
 
 
 
+         </main>
 
-
+    </div>
     
 
 
-
-    <footer>
-
-
-
-
-
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
