@@ -1,6 +1,269 @@
-Photo by <a href="https://unsplash.com/@stijntestrake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stijn te Strake</a> on <a href="https://unsplash.com/photos/a-herd-of-cows-standing-on-top-of-a-lush-green-field-UdhpcfImQ9Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> the first cow image
-Photo by <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Priscilla Du Preez 🇨🇦</a> on <a href="https://unsplash.com/photos/herd-of-cows-on-grassland-tGtWKDdicn4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>the second cow image
-Photo by <a href="https://unsplash.com/@iamateapot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Prometheus 🔥</a> on <a href="https://unsplash.com/photos/a-tree-with-red-flowers-5wqCn3YGqlg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      Photo by <a href="https://unsplash.com/@mw960367054?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">毛 祥</a> on <a href="https://unsplash.com/photos/people-on-brown-grass-field-during-daytime-uHrFAfFhv0w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
-      
+This is actually a really good question because it's the difference between designing something that **looks nice** and designing something that would genuinely help a business get customers.
+
+For a meat distributor, visitors are usually asking:
+
+> Can I trust you?
+>
+> What products do you sell?
+>
+> Can you supply my business consistently?
+>
+> How do I contact you?
+
+So I'd structure the landing page around answering those questions.
+
+---
+
+## Hero Section
+
+Large image of:
+
+* Premium cuts of meat
+* Cold storage facilities
+* Delivery trucks
+* Butchers at work
+
+Headline:
+
+```text
+Fresh, Quality Meat Delivered Reliably
+```
+
+Subheadline:
+
+```text
+Supplying restaurants, hotels, retailers, and wholesalers with premium meat products.
+```
+
+CTA:
+
+```text
+Request a Quote
+```
+
+```text
+Contact Sales
+```
+
+---
+
+## About The Company
+
+This builds trust.
+
+Include:
+
+* Years in business
+* Areas served
+* Company mission
+* Industry experience
+
+Example:
+
+```text
+Serving businesses across Kenya with quality meat products and dependable delivery services since 2015.
+```
+
+---
+
+## Products Section
+
+Probably the most important section.
+
+Cards for:
+
+🥩 Beef
+
+🐐 Goat
+
+🐑 Lamb
+
+🐔 Poultry
+
+🥓 Processed Products
+
+Each card can have:
+
+* Image
+* Description
+* Available cuts
+
+---
+
+## Why Choose Us
+
+Customers want reassurance.
+
+Examples:
+
+### Quality Assurance
+
+Inspected and handled according to food safety standards.
+
+### Reliable Supply
+
+Consistent inventory for businesses of all sizes.
+
+### Cold Chain Logistics
+
+Temperature-controlled transportation.
+
+### Competitive Pricing
+
+Bulk and wholesale options available.
+
+---
+
+## Process Section
+
+Show how the company works.
+
+```text
+Order
+↓
+Processing
+↓
+Quality Check
+↓
+Delivery
+```
+
+This makes the operation feel professional.
+
+---
+
+## Industries Served
+
+A section people often forget.
+
+Icons/cards for:
+
+🍽 Restaurants
+
+🏨 Hotels
+
+🛒 Retail Stores
+
+🥩 Butcheries
+
+🏭 Food Manufacturers
+
+---
+
+## Testimonials
+
+Very important in B2B.
+
+Example:
+
+```text
+"They've supplied our restaurant chain for over three years with excellent consistency."
+```
+
+---
+
+## Certifications & Standards
+
+This is huge for food businesses.
+
+Display:
+
+* Food safety certifications
+* Government approvals
+* Industry memberships
+
+This often matters more than fancy animations.
+
+---
+
+## Service Area
+
+Show:
+
+```text
+Nairobi
+Mombasa
+Nakuru
+Kisumu
+```
+
+or whatever locations apply.
+
+A map works well here.
+
+---
+
+## Contact Section
+
+Must be obvious.
+
+Include:
+
+* Phone number
+* Email
+* Physical location
+* Business hours
+* Quote request form
+
+---
+
+## Footer
+
+Quick links
+
+Products
+
+Contact information
+
+Social media
+
+---
+
+## If I Were Building This As A Template
+
+My section order would be:
+
+```text
+Navbar
+↓
+Hero
+↓
+About Company
+↓
+Products
+↓
+Why Choose Us
+↓
+Industries Served
+↓
+Process
+↓
+Testimonials
+↓
+Certifications
+↓
+Contact Form
+↓
+Footer
+```
+
+Notice what's *not* there:
+
+```text
+Fancy animations
+Complex page transitions
+Glassmorphism everywhere
+```
+
+Food distribution businesses usually care more about:
+
+```text
+Trust
+Reliability
+Quality
+Supply Capacity
+```
+
+than cutting-edge design trends.
+
+If you build a meat distributor template, I'd lean into **clean, trustworthy, industrial-professional design** rather than the cinematic style you used for your portfolio. That difference in visual language is what makes templates feel tailored to their industries.
