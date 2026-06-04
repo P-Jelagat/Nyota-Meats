@@ -1,3 +1,5 @@
+
+// MENU BUTTON FUNCTIONALITY
 const menuBtn = document.querySelector('#menu-btn');
 const menu = document.querySelector('.menu');
 
@@ -21,3 +23,4 @@ document.addEventListener('click', (e) => {
 
 }
 });
+
