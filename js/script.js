@@ -24,3 +24,29 @@ document.addEventListener('click', (e) => {
 }
 });
 
+// FAQ SECTION JS
+
+const faqs = document.querySelectorAll(".faq-item");
+
+faqs.forEach(faq => {
+
+    const question = faq.querySelector(".faq-question");
+    const answer = faq.querySelector(".faq-answer");
+    const icon = faq.querySelector(".display");
+
+    question.addEventListener('click', () => {
+        answer.classList.toggle("show");
+
+        if(answer.classList.contains("show")){
+
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            icon.textContent = "-";
+
+        }else{
+
+            answer.style.maxHeight = 0;
+            icon.textContent = "+"
+
+        }
+    })
+});
