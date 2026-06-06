@@ -190,6 +190,7 @@ nav a:active{
     min-height: 40vh;
     padding: 40px;
     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+    display: flex;
 }
 
 #about-info{
@@ -288,12 +289,17 @@ nav a:active{
     margin-bottom: .75rem;
 }
 
+.product-info ul{
+    margin: 10px 0;
+}
+
 .product-info ul li{
     list-style: none;
+    opacity: 0.8;
 }
 
 .product-info ul li::before{
-    content: '✓';
+    content: '✓ ';
 }
 
 /* PROCESS SECTION */
