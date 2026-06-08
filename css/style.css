@@ -23,17 +23,26 @@ body{
 
 /* STYLING HEAD CONTENTS */
 #head{
-    position: sticky;
+     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; 
     padding: 5px;
     border: 1px solid rgba(22, 12, 4, 0.4);
     background: #FAFAFA;
 }
 
-#head h1{
-    text-align: center;
-    margin-bottom: 10px;
+.logo{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.logo img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
 }
 
 nav{
@@ -44,10 +53,14 @@ nav{
 
 nav a{
     text-decoration: none;
+    font-weight: bold;
+    color: #4b290d;
+    transition: 0.1s ease;
 }
 
 nav a:hover{
     text-decoration: underline;
+    color: #a12323;
 }
 
 nav a:active{
@@ -86,10 +99,14 @@ nav a:active{
 
 .menu a{
     text-decoration: none;
+    transition: 0.1s ease;
+    font-weight: bold;
+    color: #4b290d;
 }
 
 .menu a:hover{
     text-decoration: underline;
+    color: #a12323;
 }
 
 .menu a:active{
@@ -127,7 +144,7 @@ nav a:active{
 
 .overlay{
     position: absolute;
-    bottom: 0;
+    bottom: 1em;
     right: 0;
     width: 30%;
     height: 60%;
@@ -136,11 +153,42 @@ nav a:active{
     gap: 1.5em;
 }
 
-.text h2,
+.text h2{
+    color: #FAFAFA;
+    font-style: italic;
+    font-size: 1.7em;
+}
+
 .text p {
     color: #FAFAFA;
     font-style: italic;
+    font-size: 1.1em;
 } 
+
+@media(max-width:950px){
+    .text p{
+        font-size: 1em;
+    }
+    .text h2{
+        font-size: 1.5em;
+    }
+}
+
+.primary{
+    background: #8B1E1E;
+    color:#FAFAFA ;
+    padding: 10px;
+    border: none;
+    border-radius: 150px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.primary:hover{
+    background: #a12323;
+    box-shadow: 0 0 13px;
+}
 
 .cta-links{
     display: flex;
@@ -149,18 +197,17 @@ nav a:active{
 }
 
 .cta-links a{
-    background: rgba(250, 250, 250, 0.7);
+    background: rgba(250, 250, 250, 0.9);
     border-radius: 150px;
     text-decoration: none;
     padding: 10px;
     box-shadow: #160c04;
     transition: 0.3s ease;
 }
-
+                  
 .cta-links a:hover{
     background: #ffffff;
     box-shadow: 0px 0px 10px ;
-
 }
 
 .cta-links a:active{
@@ -184,13 +231,33 @@ nav a:active{
     }
 }
 
+
+
 /* ABOUT US SECTION */
 #about-us {
     margin-top: 50px ;
     min-height: 40vh;
-    padding: 40px;
     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
     display: flex;
+    gap: 1em;
+    border-radius: 2px;
+}
+
+@media(max-width:950px){
+    #about-us{
+        flex-direction: column;
+    }
+}
+
+.about-image{
+    flex: 1;
+    border-radius: inherit;
+}
+
+.about-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
 }
 
 #about-info{
@@ -198,6 +265,8 @@ nav a:active{
     flex-direction: column;
     justify-content: center;
     gap: 1em;
+    flex: 1;
+    padding: 30px;
 }
 
 /* PRODUCTS SECTION */
@@ -261,29 +330,22 @@ nav a:active{
  
 }
 
-.quote-panel{
-    align-self: flex-end;
-}
-
-#quote {
-    background: rgba(250, 250, 250);
-    border-radius: 150px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+.quote-btn {
+    display: flex;
+    justify-content: flex-end;
     padding: 20px;
-    margin-right: 10px;
-    transition: 0.3s ease;
-    cursor: pointer;
+    padding-top: 0;
 }
 
-#quote:hover{
-    box-shadow: 0px 0px 10px ;
+.quote-btn button{
+    padding: 5px;
+    background: #8B1E1E;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-weight: bold;
 }
-
-
-#quote:active{
-    opacity: 0.4;
-}
-
 
 .product-info h4{
     margin-bottom: .75rem;
