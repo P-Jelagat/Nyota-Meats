@@ -50,3 +50,18 @@ faqs.forEach(faq => {
         }
     })
 });
+
+// SEE MORE FUNCTIONALITY ON PRODUCTS
+const toggleBtn = document.getElementById('toggle-products');
+const hiddenProducts = document.querySelectorAll('.hidden-product');
+
+let expanded = false;
+
+toggleBtn.addEventListener('click', () => {
+
+    expanded = !expanded;
+    hiddenProducts.forEach(product => {
+        product.classList.toggle('show');
+       });
+       toggleBtn.textContent =  expanded ? 'See Less' : 'See More';
+});
