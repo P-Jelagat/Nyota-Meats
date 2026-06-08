@@ -56,12 +56,25 @@ const toggleBtn = document.getElementById('toggle-products');
 const hiddenProducts = document.querySelectorAll('.hidden-product');
 
 let expanded = false;
+let originalPosition = 0;
 
 toggleBtn.addEventListener('click', () => {
+
+    if(!expanded){
+        originalPosition = window.scrollY;
+    }
 
     expanded = !expanded;
     hiddenProducts.forEach(product => {
         product.classList.toggle('show');
        });
-       toggleBtn.textContent =  expanded ? 'See Less' : 'See More';
+    toggleBtn.textContent =  expanded ? 'See Less' : 'See More';
+    
+    if(!expanded){
+        window.scrollTo({
+            top: originalPosition,
+            behaviour: 'smooth'
+        });
+    }
+
 });
