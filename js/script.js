@@ -24,7 +24,7 @@ document.addEventListener('click', (e) => {
 }
 });
 
-// FAQ SECTION JS
+// FAQ ANSWER DISPLAY
 
 const faqs = document.querySelectorAll(".faq-item");
 
@@ -77,4 +77,49 @@ toggleBtn.addEventListener('click', () => {
         });
     }
 
+});
+
+// FAQ SEARCHBAR RESPONSIVENESS
+const searchInput = document.getElementById("faq-search");
+const searchBtn = document.getElementById("search-btn");
+const faqItems = document.querySelectorAll(".faq-item");
+const noResults = document.getElementById("no-results");
+
+function searchFaqs() {
+
+    const query = searchInput.value.trim().toLowerCase();
+    let matchesFound = 0;
+
+    faqItems.forEach(item => {
+
+        const text = item.textContent.toLowerCase();
+
+        if (text.includes(query)) {
+            item.style.display = "block";
+            matchesFound++;
+        } else {
+            item.style.display = "none";
+        }
+
+    });
+
+    if (matchesFound === 0) {
+        noResults.style.display = "block";
+    } else {
+        noResults.style.display = "none";
+    }
+
+}
+
+// Search while typing
+searchInput.addEventListener("input", searchFaqs);
+
+// Search when button is clicked
+searchBtn.addEventListener("click", searchFaqs);
+
+// Allow pressing enter to show results
+searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        searchFaqs();
+    }
 });

@@ -136,7 +136,7 @@ nav a:active{
 
 .hero-image{
     height: 100%;
-    background: url(/images/screenshots/Screenshot\ 2026-06-08\ 134537.png);
+    background: url(/images/Screenshot\ 2026-06-08\ 134537.png);
     background-size: cover;
     background-position: right;
     transform: scaleX(-1);
@@ -451,6 +451,11 @@ nav a:active{
     opacity: 0.85;
 }
 
+.item img{
+    height: 12px;
+    width: 12px;
+}
+
 .info-cards{
     margin: 1em 0;
     display: grid;
@@ -479,16 +484,8 @@ nav a:active{
     gap: 1em;
 }
 
-#brown{
-    background: rgba(75, 41, 13, 0.5);
-    color: #FFFAF5;
-    border: 1px solid rgba(22, 12, 4, 0.51);
-    align-self: flex-start;
-    margin: 10px 0;
-}
-
-#brown:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+#supply-cta{
+    border: 1px solid #160c04;
 }
 
 /* WHY US */
@@ -505,7 +502,7 @@ nav a:active{
     gap: 2rem;
 }
 
-.why-info{
+.why-cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     margin: 1em;
@@ -520,7 +517,7 @@ nav a:active{
     margin: 3px;
     gap: 0.5rem;
     padding: 0.5rem;
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)) ;
+    background: linear-gradient(rgba(255,255,255,0.7), rgb(255,255,255)) ;
 }
 
 
@@ -533,6 +530,27 @@ nav a:active{
 .why-text p{
     font-size: small;
 }
+
+/* STAT CARDS */
+.stat-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    padding: 40px;
+    gap: 1em;
+    /* background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)) ; */
+}
+
+.stat-card{
+    padding: 4em;
+    background: linear-gradient(rgba(255,255,255,0.7), rgb(255,255,255)) ;
+    border-radius: 12px;
+    margin: 2px;
+}
+
+.stat-card h3{
+    font-size: 1.5em;
+}
+
 
 /* TESTIMONIALS */
 #testimonials h3{
@@ -552,27 +570,28 @@ nav a:active{
 }
 
 .testimonial{
-    min-height: 60vh;
-    width: 100vw;
+    min-height: 40vh;
+    width: 90vw;
     background: #FAFAFA;
     padding:30px;
     margin: 4px;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 1em;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     scroll-snap-align: start;
 }
 
-.article-background{
-    height: 80px;
-    width: 80px;
-    border-radius: 1000px;
+.stars{
+    width: 100%;
+    height: 2em;
+    display: flex;
 }
 
-.article-background img{
+.stars img{
+    object-fit: contain;
     height: 100%;
     width: 100%;
     border-radius: inherit;
@@ -589,6 +608,9 @@ nav a:active{
 .testimonial-text h5{
     opacity: 0.7;
 }
+
+
+/* FAQs */
 
 #faq{
     background-color: #FAFAFA;
@@ -622,6 +644,13 @@ nav a:active{
 
 .search input{
     padding: 5px;
+}
+
+#no-results{
+    display: none;
+    margin-top: 1rem;
+    color: #666;
+    font-style: italic;
 }
 
 .faq-item{
@@ -687,6 +716,10 @@ footer a{
     flex-direction: column;
     gap: 1.5em;
 
+}
+
+.contact-info{
+    line-height: 1.5;
 }
 
 .footer-links{
