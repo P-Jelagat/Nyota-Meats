@@ -227,7 +227,9 @@ nav a:active{
 @media(max-width: 950px){
     .overlay{
         top: 2em;
+        width: 50%;
     }
+
 
     .cta-links{
         flex-direction: column;
@@ -688,6 +690,9 @@ nav a:active{
 
 .search{
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .search label{
@@ -696,12 +701,14 @@ nav a:active{
 
 #search-btn{
     padding: 5px;
+    max-width: 50px;
     cursor: pointer;
     margin: 5px;
 }
 
 .search input{
     padding: 5px;
+    max-width: 300px;
 }
 
 #no-results{
