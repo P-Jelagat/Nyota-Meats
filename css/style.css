@@ -4,10 +4,25 @@
     box-sizing: border-box;
     color: #160c04;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+
+/* LARGER FONT */
+p{
+    font-size: larger;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+h4{
+    font-size: large;
 }
 
 body{
@@ -37,6 +52,7 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
+    margin-top: 10px;
 }
 
 .logo img{
@@ -415,6 +431,7 @@ nav a:active{
 
 #steps ul li{
     font-weight: bold;
+    font-size: larger;
     color: rgba(0, 0, 0, 0.75);
 }
 
@@ -752,6 +769,7 @@ footer a{
 #footer-cta a:active{
     opacity: 0.3;
 }
+
 
 
 
